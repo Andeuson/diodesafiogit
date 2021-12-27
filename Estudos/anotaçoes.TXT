@@ -1,0 +1,540 @@
+classe calendar
+classe abstrada que prove metodos para converter data em um instante especifico
+
+
+manipulando datas
+cada interação ele cria a partir da anterior
+respeita um cadeia
+
+exitem forma de ver diversas formas de se apresentar a data
+
+classe DateFormat
+DateFormat e SimpleDateFormat(define um padrao de saida para a data)
+ambos oferecem maneiras de formatar e parsear a saida das datas
+
+         datas no java 8
+*Joda Time?*
+
+-LocalDate
+classe imutalvel que representa uma data e formato padrão yyyy/mm/dd
+
+-LocalTime 
+classe imutavel que representa um padrao de hora-minuto-segundo
+consegue ate definir nanosegundos
+
+LocalDateTime
+junção de ambos
+
+docs.oracle.com/javase/8/docs/api/java/time
+
+
+            TRATAMENTO DE EXCEÇÕES
+Exceções
+-sao todos os erros q ocorrem durante o processamento de um metodo que podem ser esperados ou nao esperados
+
+Esperados e nao esperados
+-esperados- fluxo ou metodo de um sistema foi preparado para receber.
+
+-não esperados
+nao esperados para o fluxo ou metodos de um sistema
+
+-bloco try catch
+sempre é utilizado quando processo que sera executado dentro de um metodo é esperado um errro, então cria-se um bloco protegido onde qualquer erro que ocorra dentro do trecho try é direcionado para o trecho catch e sofrera o devido tratamento de erro
+
+Finall e throw
+
+-finally bloco de codigo que pode ou nao ser utilizado junto ao try catch
+sempre sera executado independente se ocorrer erro ou nao dentro do fluxo onde existe o try catch.normalmente usado para liberar recurso e dar continuação
+
+-throws
+metodo que sera retornado caso ocorra um erro para o metodo que fez a chamada dentro de um fluxo encadeado
+
+throw
+usado para lançar a exceção desejada, juntamente com a mensagem de erro para o metodo que fez a chamada
+
+
+
+orientação objetos
+programação estruturada- são formadas de forma processada, as funçoes de cima chamam as de baixo
+
+usar objetos nao faz com que seu programa seja orientado a objeto
+
+função utilitaria e conceitos basicos
+objetos onde temos atributos e açoes tomadas que podem ser tomadas ou executadas por ele
+
+propriedades do exemplo; coisasa que  se pode ver
+
+metodos- interagem com o programa/objeto
+
+criar classes utilitarias que são agrupadas por tema de que forma que voce possa compartilhar com todo seu time e assim evitar duplicidade de codigo
+ele se resolve por ela mesmo? os parametros sao simples e diretos?o resultado tambem e simples e direto?
+
+conceitos
+classe e objeto
+representação dados em objetos ou entidades para processamento de outros objetos
+1-criar um pacote
+2 dentro do pacote crie uma classe (ex cliente)(public class cliente {}
+3 dentro das {} coloque atributos ex(nome, endereço, numero, codigo...(public integer codigo/ public string nome ;)
+4- pode se criar um atributo 
+
+associação de classes
+quando utilizamos uma classe dentro de outra classe
+criar outra classe para importar para a primeira classe(colocar na classe inicial um 'public "XXXXXX")
+
+
+
+herança
+utilização de uma classe base fazendo com que uma nova classe tenha todos os atributos e funções da classe pai, mais suas proprias
+
+
+
+encapsulamento
+possibilidade de proteger alguns dados ou funcionalidades da classe nao permitindo que seus consumidores possam acessa la
+
+
+polimorfismo
+funçoes que terao o mesmo nome mas que podem ter diferentes processamentos implementaçoes ou na mesma classe o mesmo nome e diferentes entradas
+
+
+
+
+metodo main serve para começar um progrrama em java
+
+
+***************PENSAMENTO COMPUTACIONAL************ 
+1- visao geral
+processo de pensamento q expressa a solução em passos computacionas ou algoritmos que podem ser feitos por um PC
+é uma habilidade generalista
+
+4pilares
+1decomposição- dividir um problema em subproblemas 
+2reconhecimento de padroes- identificar padroes ou tendencias
+3abstração extrapolar  o conceito do problema para uma forma generalista
+4design de algoritmos automatizar, definir passo a passo a solução do problema
+iinpu t -> operator -> output
+
+Processo continuo
+definir soluções
+testar soluções
+aperfeiçoamento de solução
+
+varaição dos pilares
+raciocinio logico e refinamento
+
+competencias
+pensamento sistematico
+colaboracao dentro da  equipe
+criatividade e design 
+facilitador
+
+habilidades complementares
+raciocinio logico- permite soluções ou conclusoes de de determinado problema
+1 indução- experimentação do que se ver 
+2 dedução- previsões e explicações( teorias)
+3 abdução- utiliza a conclusão para determinar a premissa
+dedução sintetica- indução e abdução
+dedução analitica- dedução
+
+
+
+aperfeiçoamento/refinamento- a partir de uma solução vc possa obter uma otimização na solução
+
+
+
+
+***************PILARES DO PENSAMENTO COMPUTACIONAL**************
+Decomposição
+-analise= identificar o problema e transforma-lo em problemas pequenos
+-sintese= combinar os elementos recompondo o problema original
+
+Reconhecimento de padroes
+modelo
+estrutura invariante
+repetiçoes
+
+obter caracteristicas
+classificar
+obtenha metodos para realizar a o objetivo
+
+abstração
+abstrair- observar elementos e avaliar as caracteristicas de forma separada
+
+abstração- isolar um objeto da realidade, obtendo caracteristicas e pontos essenciais
+
+generalizar- tornar geral- reunir seres ou fenomenos similares
+
+
+
+algoritmos
+descreve o problema por meio de ferramentas narrativas fluxogramas
+sequencia de passos com objetivo definido
+execuçao de tarefas especificas
+conjunto de operaçoes que resultem nos objetivos
+
+codificaçao 
+o algoritmo e  codificado de acordo com a linguagem
+
+*********************LOGICA DE PROGRAMAÇÃO ESSENCIAL***************
+1- entendendo o que é logica
+coerencia de raciocinio de ideias
+logica de programação significa contextuar a logica na programação
+
+abstação e a habilidade de concentrar aspectos essenciais de um contexto qualquer
+ignorando caracteristicas menos importantes ou acidentais
+
+ calcular a media de 
+5 7 10 3
+25/4 =6,25
+
+o que são algoritmos e pseudocodigos
+oq é um algoritmo?
+- sequencia de passos que resolve um problema
+
+studio.code.org/s/mc/stage/1/puzzle/1  - TENTE REALIZAR EM MENOS DE UMA HORA TODOS OS EXERCICIOS
+exercicio para a logica
+
+pseudocodigo
+-forma generica de se escrever um algoritmo
+ utilizando uma linguagem simples
+proprofs.com/games/wolf-sheep-and-cabbage/(lidteralmente um passo a passo sem ser com codigo
+
+rachacuca pinguins numa fria
+
+
+
+aprendendo fluxograma e variaveis, constantes e tipos de dados
+-representar graficamente um algoritmo, pode ser bem complexo porem o esquema é semelhante
+
+varaiaveis é um objeto capaz de reter e representar um valor ou expressão
+espaço na memoria do computador destinado a um dado que é ALTERADO DURANTE A EXECUÇÂO
+
+variaveis podem ser
+numericas(numeros), caracteres(letras), alfanumericas(letras e numeros) ou logicas(sim ou não)
+
+constante sempre possui o mesmo valor
+
+
+brincar com o flowgorithm
+realizar alem da amostragem das notas, mostrar a media e o total
+
+
+
+
+aula-Tomadas de decisões e expressoes
+
+expressoes aritimeticas
+operadores aritimeticos
+soma +
+subtração -
+multiplicação *
+divisão /
+potenciação ^
+porcentagem %
+
+expressoes literais
+tem como resultado valores literais 
+
+ex nome="xanaina"
+media=
+sempre coloque a o igual e as aspas
+
+treine no programa
+
+expressoes relacionais
+compostas por outras expressoes ou variaveis numericas com operadores relacionais
+retornam um valor logico(verdadeiro ou falso)	
+
+> maior
+>= maior igual
+< menor 
+<= menor ou igual
+== igualdade
+!= diferente
+
+Tomadas de decisão(IMPORTANTE)
+decidir o que azer dependendo de alguma condição encontrada durante a execução
+
+declarar 4 variaveis jan fev mar abril
+cada mes um vendedor vendeu X
+declare a media dos meses
+
+media tem q ser maior q 5k
+parabenize se for maior
+se menor manda ele se fuder
+
+
+
+
+
+CONCATENAÇÃO
+designa a operação de unir o conteudo de duas strings
+
+string e uma sequencia de caracteres
+
+ex: variavel nome  ""
+variavel sobrenome ""
+
+nome+sobrenome
+
+&= concatenação
+
+em algumas linguagens pode variar o sinal
+
+
+
+ESTRUTURA DE REPETIÇÃO
+permite executar mais de uma vez o mesmo comando ou conjunto de comandos de acordo com uma condição ou com um contador
+
+tente fazer a tabuada do 9 como exercicio
+
+**********introdução ao portugol*************
+o que são linguagens de programação?
+linguagem escrita e formal que especifica instruções e regras para gerar programas
+ alto nivel
+proximo a linguagem humana
+ baixo nivel
+linguagem de pc- somente o pc entende
+
+linguagem podem ser compiladas
+o compilador pega a linguagem e transforma num programa .exe
+
+interpretadas
+é executado por um programa de computador(ex javascript, php, html)
+
+
+
+portugol
+pseudolinguagem que permite o leitor desenvolver algoritmos estruturados em portugues de forma simples e intutiva
+independente de linguagem de programação
+
+real classe variavel com numeros reais
+cadeia= classe de conjunto de caracteres
+caracter= apenas um caracter
+
+escreva= comando para aparecer msg na tela EX: escreva ("azul é bonito")
+
+leia(nome da variavel)= comando para escrever algo. Ex: real nota1 escreva ("digite sua nota") leia (nota1)
+ utilização de comando condicional
+comando se
+se(media>=7){escreva("parabens")}
+
+para colocar quebra de linha coloque "\n" + .....
+
+senao{()}
+
+
+
+Desvio condicional
+caso
+semelhante se e senao
+
+
+laços de repetição
+permite executar mais de uma vez o mesmo comando ou oconjunto de comandos, de acordo com uma condição ou com um contador
+
+
+
+contador = 0 
+limite = 10
+faca//(faça)
+{resultado=9*contador
+escreva
+	
+}
+
+
+
+matriz e vetores
+coleção de variaveis do mesmo tipo
+acessiveis com um unico nome e armazenados contiguamente na memoria
+
+vetores sao matrizes de uma so dimensao
+
+a individualização de cada variavel de um veto é feita atraves do uso de indices
+
+
+
+
+o que dominar?
+dominio do pensamento computacional 
+raciocinio
+fundamentos java
+dominar ides
+
+
+
+*****************estrututrra de dados e algoritmos***********
+o que é estrutura de dados?
+estrutura organizade de dadoss na memoria de um computador ou em qualquer dispositivo de armazenamento, de forma que os dados possam ser utilizados de forma correta
+
+essas estruturas encontram muitas aplicações no des de sistemas, algumas sao especificas
+
+usando estruturas adequadas atraves dos algoritmos podemos trabalhar com uma grande quant de dados
+
+
+algoritmo- instruçoes estruturadas e ordenadas- passo a passo
+é utilizado para manipular dados nas estruturas de varias formas
+
+devemos saber como realizar as operaçoes
+ex: inserirdados
+excluir dados
+localizar
+etc
+
+
+
+principais estruturas
+vetores e matrizers
+registros
+lista
+pilha
+fila
+arrvore
+tabela hash
+grafos
+
+
+
+
+Vetores e matrizes
+estruturas de dados que podem auxiliar quando ha muitas variaveis do mesmo tipo em um algoritmo
+estrutura de dados indexada que pode armazenar uma determinada quantidade de valores do mesmo tipo
+
+matriz- vetor de vetores
+possui duas ou mais dimensões
+
+
+
+
+ vetores e matrizes possuem valores fixos( arrays)
+**registro
+permite armazenar mais de um tipo de dado
+ex numeros(inteiro) strings e numeros reais(real)
+
+
+possuem um nome
+e sao acessados por meio do uso do operador(.)
+
+
+			**listas
+listas possuem tamanhos ajustaveis
+na lista vc adiciona valores, pode ir crescendo ou diminuindo
+ 	listas ligada
+**existem nos ondecada um dos nos conhece o valor que esta sendo armazenado
+ 	lista duplamente ligadas
+**lista bidimencional, 
+
+
+			pilhas
+coleção de elementos e permite o acesso a somente um item por vez
+
+	lifo ou ueps
+last in first out- o primeiro elemento a ser retirado é o ultimo que tiver sido inserido
+
+	fifo ou peps
+first in first out- o primeiro a entrar é o primeiro a ser retirado
+
+
+push- inserir
+pop retirar
+
+stack- PILHA OU EMPILHAMENTO
+
+enqueue
+dequeue
+
+		Filas
+o primeiro elemento sai primeiro que o segundo 
+o segundo antes do terceiro
+semelhante ao parametro da pilha fifo
+
+
+		Arvores
+organiza os elementos de forma hierarquica
+**raiz fica no topo
+elementos subordinados aos elementos mandantes
+ raiz> 	subarvore > folhas
+
+		tabela hash
+tabela de espalhamento
+espalha os elementos de forma nao ordenada e define a tabela
+
+
+		grafos
+estruturas que permitem programar a relação entre os objetos
+semelhante a lista porem desordenado
+
+----------------------------------------------
+
+		introdução ao git e ao github
+monitora o versionamento dos codigos
+
+
+git tem interface por commando
+gui- grafic interfaces
+cli- command line interface
+
+comandos basicos de navegação do git
+	mudar pasta
+-cd/ volta pasta completa, diretorio c
+cd nome da pasta vai para pasta especifica que possui nesse diretori
+cd.. retorna 1 pagina
+
+linux é igual
+	listar pasta
+dir-dir, mostra as coisas da paginas que estamos
+(linux usa "ls")
+
+	criar pasta
+mkdir worspace
+
+	deletar pasta
+rmdir
+del nome da pata- deleta os arquivos da pasta
+
+
+	limpar tela 
+cls
+clear (linux)
+
+
+//tab= auto completar... muito util
+
+
+
+
+		instalação do git
+
+entendendo como o git funciona
+conceitos fundamentais
+
+
+	sha1
+algoritmo de encriptação, para proteger  seu arquivo
+secure hash algoritm
+opesssl sha1 nome do arquivo
+	objetos fundamentais
+objetos internos
+blobs tem o sha1 do arquivo
+treesguaedam blobs ou outras tree
+commmits guarda tudo
+
+	sistema distribuido
+ 	
+
+	segurança
+chaves ssh 
+tokens
+
+
+		primeiros comandos com git
+iniciar o git= git init
+iniciar o versionamento= git add
+criar um commmit= git commit
+
+
+		criando projeto no github
+	https://github.com/Andeuson/diodesafiogit.git
+
+
+o git bash é um terminal extendido para otimizar o uso do git.
